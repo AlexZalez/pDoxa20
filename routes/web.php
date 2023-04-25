@@ -5,18 +5,11 @@ use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::view('/', 'welcome')->name("principal");
+//Route::view('/', 'welcome')->name("principal");
+
+Route::get('/', [PostController::class, 'home'])->name('principal');
+
 Route::get("/posts", [PostController::class, 'index'] )->name("post");
 Route::view('/contacto', 'contacto')->name("contactos");
 Route::view('/nosotros', 'nosotros')->name("nosotros");

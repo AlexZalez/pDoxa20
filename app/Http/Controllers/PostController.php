@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SavePostRequest;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -13,7 +14,16 @@ class PostController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth', ['except' =>['index', 'show']]);
+        $this->middleware('auth', ['except' =>['index', 'show', 'home']]);
+    }
+
+    public function home()
+    {
+        $users = User::all();
+
+        
+
+        return view('welcome', ['users' => $users]);
     }
 
     public function index()

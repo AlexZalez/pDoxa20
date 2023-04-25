@@ -15,10 +15,10 @@
           <div class="alert alert-success">{{session('status')}}</div>
       
     @endif
-    <div class="ms-4">
+    <div class="ms-4 text-4xl font-bold">
         <h1>{{ $name }}</h1>            
     </div>
-    <div class="container-fluid">
+    <div class="container mx-auto mt-4">
         {{ $slot }}
 
     </div>
