@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Adress;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -15,11 +16,14 @@ class AdressSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('adresses')->insert([
-            ['name' => 'Estudios Basicos'],
-            ['name' => 'Ingenieria en Informatica'],
-            ['name' => 'Economia'],
-            ['name' => 'Estudios Basicos']
-        ]);
+        Adress::create(
+            ['name' => 'Estudios Basicos', 'area_id' => 1]
+        );
+        Adress::create(
+            ['name' => 'Ingenieria en Informatica', 'area_id' => null]
+        );
+        Adress::create(
+            ['name' => 'Economia', 'area_id' => null]
+        );
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Area;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -15,10 +16,14 @@ class AreaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('areas')->insert([
-            ['name' => 'Area de Ingenieria en Sistemas'],
-            ['name' => 'Area de Ciencias Economicas'],
-            ['name' => 'Area de Ciencias de la Salud']
-        ]);
+        Area::create(
+            ['name' => 'Area de Ingenieria en Sistemas', 'user_id' => 1]
+        );
+        Area::create(
+            ['name' => 'Area de Ciencias Economicas', 'user_id' => null]
+        );
+        Area::create(
+            ['name' => 'Area de Ciencias de la Salud', 'user_id' => null]
+        );
     }
 }
