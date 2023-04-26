@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Career extends Model
+class Pensum extends Model
 {
     use HasFactory;
-
-    public function pensums()
-    {
-        return $this->hasMany(Pensum::class);
-    }
 }

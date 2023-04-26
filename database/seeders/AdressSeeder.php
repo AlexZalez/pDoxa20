@@ -20,7 +20,7 @@ class AdressSeeder extends Seeder
             ['name' => 'Estudios Basicos', 'area_id' => 1]
         );
         Adress::create(
-            ['name' => 'Ingenieria en Informatica', 'area_id' => null]
+            ['name' => 'Ingenieria en Informatica', 'area_id' => 1]
         );
         Adress::create(
             ['name' => 'Economia', 'area_id' => null]
