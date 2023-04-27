@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SavePostRequest;
+use App\Models\Adress;
+use App\Models\Area;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -19,11 +21,9 @@ class PostController extends Controller
 
     public function home()
     {
-        $users = User::all();
-
-        
-
-        return view('welcome', ['users' => $users]);
+        $users = User::find(1);
+        $areas = Area::find(1);
+        return view('welcome', ['users' => $users, 'areas' => $areas]);
     }
 
     public function index()

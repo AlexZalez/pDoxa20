@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('adresses', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->bigInteger('area_id')->nullable();
+            $table->foreignId('area_id')->constrained();
             $table->timestamps();
         });
     }

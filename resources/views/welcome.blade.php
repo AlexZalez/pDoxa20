@@ -2,16 +2,14 @@
 <x-layouts.app name="Inicio">
     
     
-    <div class="mx-auto rounded-lg w-full h-64 drop-shadow-2xl">
-        @foreach ($users as $user)
-            <div class="font-extrabold text-lg">
-                {{$user->name}}
-            </div>
-            @foreach ($user->areas as $areas)
-                <div class="mx-4">
-                    {{$areas->name}}
-                </div>
-            @endforeach
+    <div class="mx-auto px-4 rounded-lg w-full h-64 drop-shadow-2xl">
+        
+        {{$users->areas}}<br><br>
+
+        {{-- {{$users->areas->adresses}} Da error --}}
+
+        @foreach ($areas->adresses as $adress)
+            {{$adress}}<br><br>
         @endforeach
         
     </div>

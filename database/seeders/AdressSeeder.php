@@ -23,7 +23,7 @@ class AdressSeeder extends Seeder
             ['name' => 'Ingenieria en Informatica', 'area_id' => 1]
         );
         Adress::create(
-            ['name' => 'Economia', 'area_id' => null]
+            ['name' => 'Economia', 'area_id' => 2]
         );
     }
 }
