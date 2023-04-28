@@ -17,7 +17,6 @@ class MunicipySeeder extends Seeder
     {
         Municipy::create([
             'name' => 'Zamora',
-            'state_id' => 1,
         ]);
     }
 }

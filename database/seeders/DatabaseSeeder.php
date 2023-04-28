@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             PensumSeeder::class,
             StateSeeder::class,
             MunicipySeeder::class,
+            TeacherSeeder::class,
         ]);
     }
 }
