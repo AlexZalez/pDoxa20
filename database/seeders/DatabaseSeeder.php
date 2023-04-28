@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             StateSeeder::class,
             MunicipySeeder::class,
             TeacherSeeder::class,
+            CardSeeder::class,
         ]);
     }
 }
