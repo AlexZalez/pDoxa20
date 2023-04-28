@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             AdressSeeder::class,
             CareerSeeder::class,
             PensumSeeder::class,
+            MunicipySeeder::class,
         ]);
     }
 }
