@@ -6,6 +6,7 @@ use App\Http\Requests\SavePostRequest;
 use App\Models\Adress;
 use App\Models\Area;
 use App\Models\Post;
+use App\Models\Teacher;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -23,7 +24,8 @@ class PostController extends Controller
     {
         $users = User::find(1);
         $areas = Area::find(1);
-        return view('welcome', ['users' => $users, 'areas' => $areas]);
+        $teacher = Teacher::find(1);
+        return view('welcome', ['users' => $users, 'teacher' => $teacher]);
     }
 
     public function index()

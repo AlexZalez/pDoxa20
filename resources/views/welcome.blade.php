@@ -4,13 +4,11 @@
     
     <div class="mx-auto px-4 rounded-lg w-full h-64 drop-shadow-2xl">
         
-        {{$users->areas}}<br><br>
+        {{$teacher}}<br><br>
+        >><{{$teacher->states}}<br><br>
+        >><{{$teacher->municipies}}<br><br>
 
-        {{-- {{$users->areas->adresses}} Da error --}}
-
-        @foreach ($areas->adresses as $adress)
-            {{$adress}}<br><br>
-        @endforeach
+        
         
     </div>
 

@@ -9,11 +9,4 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class State extends Model
 {
     use HasFactory;
-
-    public function municipies()
-    {
-        return $this->hasMany(Municipy::class);
-    }
-
-    
 }
