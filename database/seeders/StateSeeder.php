@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Municipy;
+use App\Models\State;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class MunicipySeeder extends Seeder
+class StateSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,8 @@ class MunicipySeeder extends Seeder
      */
     public function run()
     {
-        Municipy::create([
-            'name' => 'Zamora',
-            'state_id' => 1,
+        State::create([
+            'name' => 'Aragua',
         ]);
     }
 }
