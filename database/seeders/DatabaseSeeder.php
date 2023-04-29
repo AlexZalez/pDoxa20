@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Departament;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,6 +25,8 @@ class DatabaseSeeder extends Seeder
             MunicipySeeder::class,
             TeacherSeeder::class,
             CardSeeder::class,
+            DepartamentSeeder::class,
+            SubjectSeeder::class,
         ]);
     }
 }
