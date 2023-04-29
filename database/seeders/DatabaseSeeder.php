@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             DepartamentSeeder::class,
             SubjectSeeder::class,
             ShiftSeeder::class,
+            SectionSeeder::class,
         ]);
     }
 }
