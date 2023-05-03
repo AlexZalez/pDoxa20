@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
             HourSeeder::class,
             ShiftHourSeeder::class,
             SchemeDaySeeder::class,
+            DaySeeder::class,
         ]);
     }
 }
