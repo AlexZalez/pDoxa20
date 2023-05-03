@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
             DaySeeder::class,
             UbicationSeeder::class,
             ClassroomSeeder::class,
+            BlockSeeder::class,
         ]);
     }
 }
