@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
             SchemeDaySeeder::class,
             DaySeeder::class,
             UbicationSeeder::class,
+            ClassroomSeeder::class,
         ]);
     }
 }
