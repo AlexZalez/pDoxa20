@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('meeting_sections', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('section_id');
+            $table->bigInteger('meeting_id');
             $table->timestamps();
         });
     }
