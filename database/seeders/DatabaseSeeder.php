@@ -30,6 +30,8 @@ class DatabaseSeeder extends Seeder
             ShiftSeeder::class,
             SectionSeeder::class,
             TeacherSectionSeeder::class,
+            ClassroomTypeSeeder::class,
+            MeetingSeeder::class,
         ]);
     }
 }
