@@ -37,6 +37,7 @@ class DatabaseSeeder extends Seeder
             SchemeHourSeeder::class,
             HourSeeder::class,
             ShiftHourSeeder::class,
+            SchemeDaySeeder::class,
         ]);
     }
 }
