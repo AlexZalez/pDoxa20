@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
             TeacherSectionSeeder::class,
             ClassroomTypeSeeder::class,
             MeetingSeeder::class,
+            MeetingSectionSeeder::class,
         ]);
     }
 }
